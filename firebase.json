@@ -1,0 +1,42 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "sellai-wasi-app-2026",
+          "appId": "1:139046711331:android:b474e111809a9c14460196",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "sellai-wasi-app-2026",
+          "configurations": {
+            "android": "1:139046711331:android:b474e111809a9c14460196",
+            "web": "1:139046711331:web:8c423a2c228bffe8460196"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ],
+  "emulators": {
+    "functions": {
+      "host": "0.0.0.0",
+      "port": 5001
+    }
+  }
+}
